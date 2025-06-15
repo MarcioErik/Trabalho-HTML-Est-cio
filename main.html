@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa de Acessibilidade Cultural - Tradução e Interpretação em Libras</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Ícones do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>LibrasConnect</h1>
+                <p>Acessibilidade que conecta</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#quem-somos">Quem Somos</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#clientes">Clientes</a></li>
+                    <li><a href="#orcamento">Orçamento</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner Principal -->
+    <section id="inicio" class="banner">
+        <div class="container">
+            <h2>Conectamos Pessoas Através da Língua de Sinais</h2>
+            <p>Tradução e interpretação profissional em Libras para tornar seu evento, empresa ou material acessível</p>
+            <a href="#orcamento" class="btn">Solicitar Orçamento</a>
+        </div>
+    </section>
+
+    <!-- Seção Quem Somos -->
+    <section id="quem-somos" class="section">
+        <div class="container">
+            <h2>Quem Somos</h2>
+            <div class="content">
+                <p>A LibrasConnect é uma empresa especializada em tradução e interpretação de Língua Brasileira de Sinais (Libras), comprometida com a inclusão e acessibilidade da comunidade surda.</p>
+                
+                <div class="card">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>Missão</h3>
+                    <p>Promover a inclusão social através da comunicação acessível, garantindo que pessoas surdas tenham pleno acesso à informação e cultura.</p>
+                </div>
+                
+                <div class="card">
+                    <i class="fas fa-eye"></i>
+                    <h3>Visão</h3>
+                    <p>Ser referência nacional em serviços de tradução e interpretação em Libras, contribuindo para uma sociedade mais inclusiva.</p>
+                </div>
+                
+                <div class="card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Valores</h3>
+                    <p>Ética, respeito à diversidade, excelência profissional e compromisso com a comunidade surda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section id="servicos" class="section">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service">
+                    <i class="fas fa-hands"></i>
+                    <h3>Interpretação em Eventos</h3>
+                    <p>Interpretação simultânea em Libras para palestras, congressos, reuniões e eventos culturais.</p>
+                </div>
+                
+                <div class="service">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Tradução de Materiais Didáticos</h3>
+                    <p>Adaptação de conteúdos educacionais para Libras, garantindo acessibilidade em instituições de ensino.</p>
+                </div>
+                
+                <div class="service">
+                    <i class="fas fa-video"></i>
+                    <h3>Tradução de Vídeos</h3>
+                    <p>Tradução para Libras de vídeos institucionais, propagandas, filmes e documentários.</p>
+                </div>
+                
+                <div class="service">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Acompanhamento Profissional</h3>
+                    <p>Intérpretes para acompanhamento em entrevistas, audiências, consultas médicas e outros.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Clientes -->
+    <section id="clientes" class="section">
+        <div class="container">
+            <h2>Clientes e Parceiros</h2>
+            <p>Alguns dos nossos clientes e parceiros que confiaram em nossos serviços:</p>
+            
+            <div class="logos">
+                <div class="logo-item"><img src="https://imagensfree.com.br/wp-content/uploads/2021/01/estacio-logo-0-2048x2048.png" alt="logoestácio"></div>
+                <div class="logo-item"><img src="https://logospng.org/download/bauducco/logo-bauducco-256.png" alt="logobauducco"></div>
+                <div class="logo-item"><img src="https://logodownload.org/wp-content/uploads/2014/05/unimed-logo-1.png" alt="logounimed"></div>
+            </div>
+            
+            <div class="depoimentos">
+                <h3>Depoimentos</h3>
+                <div class="depoimento">
+                    <p>"A LibrasConnect proporcionou acessibilidade em nosso evento, tornando-o verdadeiramente inclusivo."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Orçamento -->
+    <section id="orcamento" class="section">
+        <div class="container">
+            <h2>Solicite um Orçamento</h2>
+            <form id="orcamentoForm">
+                <div class="form-group">
+                    <label for="tipo-servico">Tipo de Serviço:</label>
+                    <select id="tipo-servico" name="tipo-servico" required>
+                        <option value="">Selecione...</option>
+                        <option value="interpretacao">Interpretação</option>
+                        <option value="traducao">Tradução</option>
+                    </select>
+                </div>
+                
+                <!-- Campos para Interpretação (aparecem quando selecionado) -->
+                <div id="campos-interpretacao" class="servico-campos" style="display: none;">
+                    <div class="form-group">
+                        <label for="evento-nome">Nome do Evento:</label>
+                        <input type="text" id="evento-nome" name="evento-nome">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="evento-tipo">Tipo do Evento:</label>
+                        <select id="evento-tipo" name="evento-tipo">
+                            <option value="juridico">Jurídico</option>
+                            <option value="educacao">Educação</option>
+                            <option value="artistico">Artístico/Cultural</option>
+                            <option value="videoconferencia">Vídeo Conferência</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="evento-tempo">Tempo do Evento (minutos):</label>
+                        <input type="number" id="evento-tempo" name="evento-tempo" min="1">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Ficará Gravado?</label>
+                        <div class="radio-group">
+                            <input type="radio" id="gravado-sim" name="gravado" value="sim">
+                            <label for="gravado-sim">Sim</label>
+                            <input type="radio" id="gravado-nao" name="gravado" value="nao" checked>
+                            <label for="gravado-nao">Não</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="evento-endereco">Endereço:</label>
+                        <input type="text" id="evento-endereco" name="evento-endereco">
+                    </div>
+                    
+                    <button type="button" id="calcular-interpretacao" class="btn">Calcular Orçamento</button>
+                    
+                    <div id="resultado-interpretacao" class="resultado"></div>
+                </div>
+                
+                <!-- Campos para Tradução (aparecem quando selecionado) -->
+                <div id="campos-traducao" class="servico-campos" style="display: none;">
+                    <div class="form-group">
+                        <label for="material-titulo">Título do Material:</label>
+                        <input type="text" id="material-titulo" name="material-titulo">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="material-tipo">Tipo de Material:</label>
+                        <select id="material-tipo" name="material-tipo">
+                            <option value="videobook">VideoBook</option>
+                            <option value="tv">Programa de TV</option>
+                            <option value="propaganda">Propaganda de Marcas</option>
+                            <option value="filme">Filme</option>
+                            <option value="documentario">Documentário</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="material-tempo">Tempo do vídeo (minutos):</label>
+                        <input type="number" id="material-tempo" name="material-tempo" min="1">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Legendagem?</label>
+                        <div class="radio-group">
+                            <input type="radio" id="legendagem-sim" name="legendagem" value="sim">
+                            <label for="legendagem-sim">Sim</label>
+                            <input type="radio" id="legendagem-nao" name="legendagem" value="nao" checked>
+                            <label for="legendagem-nao">Não</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="material-edicao">Tipo de Edição:</label>
+                        <select id="material-edicao" name="material-edicao">
+                            <option value="simples">Edição Simples</option>
+                            <option value="completa">Edição Completa</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="material-descricao">Descrição (opcional):</label>
+                        <textarea id="material-descricao" name="material-descricao"></textarea>
+                    </div>
+                    
+                    <button type="button" id="calcular-traducao" class="btn">Calcular Orçamento</button>
+                    
+                    <div id="resultado-traducao" class="resultado"></div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer id="contato">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-envelope"></i> librasconnect@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> (85) 98853-7798</p>
+                    <p><i class="fab fa-whatsapp"></i> (85) 98853-7798</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Endereço</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Rua Brasil, 608, Parque das Nações, Caucaia</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 LibrasConnect - Todos os direitos reservados</p>
+                <div class="selo-acessibilidade">
+                    <i class="fas fa-universal-access"></i>
+                    <span>Compromisso com a Acessibilidade</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão flutuante do WhatsApp -->
+    <a href="https://wa.me/5585988537798" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
