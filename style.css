@@ -177,7 +177,7 @@ nav ul li a:hover {
 }
 
 .logo-item {
-    max-width: 150px; /* Ajuste conforme necessário */
+    max-width: 150px;
     height: auto;
     display: flex;
 }
